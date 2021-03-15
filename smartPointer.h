@@ -45,6 +45,10 @@ public:
         return p;
     }
 
+    T operator* (){
+        return *p;
+    }
+
 
 private:
     T* p;

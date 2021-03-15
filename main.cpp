@@ -42,7 +42,8 @@ void test2(){
 
     // Вывод всех элементов вектора
     for(int i = 0; i < vector.size(); i++){
-        std::cout << *(vector[i].get()) << " ";
+        std::cout << *(vector[i]) << " ";
+
     }
     std::cout << std::endl;
 
@@ -51,9 +52,9 @@ void test2(){
     // указано в деструкторе умного указателя
     vector.erase(vector.begin()+2);
 
-    // Вывод всех элементов вектора
+    // // Вывод всех элементов вектора
     for(int i = 0; i < vector.size(); i++){
-        std::cout << *(vector[i].get()) << " ";
+        std::cout << *(vector[i]) << " ";
     }
     std::cout << std::endl;
 }
